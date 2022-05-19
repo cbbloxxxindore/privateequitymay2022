@@ -20,6 +20,7 @@ public class InvestorServiceImpl implements InvestorService {
 @Autowired
 	InvestorRepository investorRepository;
 	public void SaveInvestor(InvestorRequest investorRequest) {
+		
 		StringBuilder msgBuilder= new StringBuilder(CLASS_NAME).append("::"+SAVE_METHOD);
 		try {
 			 log.info(msgBuilder.append("Attemping to save investor  service").toString());
